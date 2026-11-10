@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<section class="card">
+    <h2>Adicionar Hábito</h2>
+
+    <div class="form-row">
+        <input
+            id="habitInput"
+            class="input-text"
+            placeholder="Ex: Academia"
+        >
+
+        <button
+            id="addHabitBtn"
+            class="btn-primary"
+        >
+            Adicionar
+        </button>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Hábitos</h2>
+
+    <div id="habitsContainer"></div>
+</section>
+
+<section class="card">
+    <h2>Métricas</h2>
+
+    <p>🔥 Streak Atual: <span id="currentStreak">0</span></p>
+
+    <p>🏆 Melhor Streak: <span id="maxStreak">0</span></p>
+
+    <p>📈 Taxa Mensal: <span id="completionRate">0%</span></p>
+</section>
+
+<script src="/app.js"></script>
+
+</body>
+</html>
